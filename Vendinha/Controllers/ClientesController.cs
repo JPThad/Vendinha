@@ -48,7 +48,16 @@ namespace Vendinha.Controllers
                 Idade = DateTime.Today.Year - cliente.DataNascimento.Year,
 
                 cliente.Email,
-                cliente.Dividas
+
+                Dividas = cliente.Dividas.Select(d => new
+                {
+                    d.Id,
+                    d.Valor,
+                    d.EstaPaga,
+                    d.DataCriacao,
+                    d.DataPagamento,
+                    d.ClienteId
+                })
             };
 
             return Ok(resultado);
