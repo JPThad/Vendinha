@@ -10,3 +10,4 @@ C:\Users\joaop\source\repos\Vendinha\Vendinha.Core\obj\Debug\net8.0\Vendinha.Cor
 C:\Users\joaop\source\repos\Vendinha\Vendinha.Core\obj\Debug\net8.0\refint\Vendinha.Core.dll
 C:\Users\joaop\source\repos\Vendinha\Vendinha.Core\obj\Debug\net8.0\Vendinha.Core.pdb
 C:\Users\joaop\source\repos\Vendinha\Vendinha.Core\obj\Debug\net8.0\ref\Vendinha.Core.dll
+C:\Users\joaop\source\repos\Vendinha\Vendinha.Core\obj\Debug\net8.0\Vendinha.Core.sourcelink.json

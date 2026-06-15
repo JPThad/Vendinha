@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Vendinha.Core.Models;
 using Vendinha.Core.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace Vendinha.Core.Services
 {
@@ -13,7 +14,23 @@ namespace Vendinha.Core.Services
             this.context = context;
         }
 
-        public async Task<List<object>> ListarClientesOrdenadosPorDivida(string? nome, int pagina)
+        public bool Validar(Cliente cliente, out List<ValidationResult> erros)
+        {
+            var validation = new ValidationContext(cliente);
+
+            erros = new List<ValidationResult>();
+
+            Validator.TryValidateObject(
+                cliente,
+                validation,
+                erros,
+                true
+            );
+
+            return erros.Count == 0;
+        }
+
+        public List<object> ListarClientesOrdenadosPorDivida(string? nome, int pagina)
         {
             var query = context.Clientes
                 .Include(c => c.Dividas)
@@ -24,7 +41,7 @@ namespace Vendinha.Core.Services
                 query = query.Where(c => c.NomeCompleto.Contains(nome));
             }
 
-            return await query
+            return query
                 .Select(c => new
                 {
                     c.Id,
@@ -42,31 +59,79 @@ namespace Vendinha.Core.Services
                 .OrderByDescending(c => c.TotalDevido)
                 .Skip((pagina - 1) * 10)
                 .Take(10)
-                .ToListAsync<object>();
+                .ToList<object>();
         }
 
-        public async Task<bool> CadastrarCliente(Cliente cliente)
+        public bool CadastrarCliente(
+            Cliente cliente,
+            out List<ValidationResult> erros)
         {
-            if (cliente.CPF.Length != 11)
+            if (!Validar(cliente, out erros))
             {
                 return false;
             }
 
-            var cpfExiste = await context.Clientes
-                .AnyAsync(c => c.CPF == cliente.CPF);
+            var cpfExiste = context.Clientes
+                .Any(c => c.CPF == cliente.CPF);
 
             if (cpfExiste)
             {
+                erros.Add(
+                    new ValidationResult("CPF já cadastrado.")
+                );
+
                 return false;
             }
 
             context.Clientes.Add(cliente);
-            await context.SaveChangesAsync();
+            context.SaveChanges();
 
             return true;
         }
 
-        private static int CalcularIdade(DateTime dataNascimento)
+        public Cliente? BuscarPorId(int id)
+        {
+            return context.Clientes
+                .Include(c => c.Dividas)
+                .FirstOrDefault(c => c.Id == id);
+        }
+
+        public bool Remover(int id)
+        {
+            var cliente = context.Clientes.Find(id);
+
+            if (cliente == null)
+            {
+                return false;
+            }
+
+            context.Clientes.Remove(cliente);
+            context.SaveChanges();
+
+            return true;
+        }
+
+        public bool Atualizar(Cliente cliente)
+        {
+            var clienteExistente = context.Clientes
+                .FirstOrDefault(c => c.Id == cliente.Id);
+
+            if (clienteExistente == null)
+            {
+                return false;
+            }
+
+            clienteExistente.NomeCompleto = cliente.NomeCompleto;
+            clienteExistente.CPF = cliente.CPF;
+            clienteExistente.DataNascimento = cliente.DataNascimento;
+            clienteExistente.Email = cliente.Email;
+
+            context.SaveChanges();
+
+            return true;
+        }
+
+        public static int CalcularIdade(DateTime dataNascimento)
         {
             var hoje = DateTime.Today;
             var idade = hoje.Year - dataNascimento.Year;

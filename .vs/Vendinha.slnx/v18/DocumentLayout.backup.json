@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\joaop\\source\\repos\\Vendinha\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\controllers\\dividascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\controllers\\dividascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\services\\dividaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\services\\dividaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\vendinha.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\vendinha.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +31,12 @@
       "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\models\\divida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\data\\vendinhadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\data\\vendinhadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\vendinha.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\vendinha.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -45,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\vendinha.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\vendinha.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha.core\\vendinha.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{14F9EDC3-A901-4705-B159-FAB85357C890}|Vendinha.Core\\Vendinha.Core.csproj|solutionrelative:vendinha.core\\vendinha.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|c:\\users\\joaop\\source\\repos\\vendinha\\vendinha\\vendinha.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3170C7ED-EA6E-4399-0ED9-570482493DED}|Vendinha\\Vendinha.Api.csproj|solutionrelative:vendinha\\vendinha.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\obj\\Debug\\net8.0\\database_schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
@@ -70,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,68 +81,33 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DividaService.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\DividaService.cs",
-              "RelativeDocumentMoniker": "Vendinha.Core\\Services\\DividaService.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\DividaService.cs",
-              "RelativeToolTip": "Vendinha.Core\\Services\\DividaService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDAAAAABAAAAAAAAAA==",
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Vendinha\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Vendinha\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T19:12:15.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "Vendinha.Core\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Cliente.cs",
-              "RelativeToolTip": "Vendinha.Core\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:16:35.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Divida.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Divida.cs",
-              "RelativeDocumentMoniker": "Vendinha.Core\\Models\\Divida.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Divida.cs",
-              "RelativeToolTip": "Vendinha.Core\\Models\\Divida.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:11:13.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "Vendinha.Core\\Services\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\ClienteService.cs",
-              "RelativeToolTip": "Vendinha.Core\\Services\\ClienteService.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T19:11:46.157Z",
+              "WhenOpened": "2026-05-24T21:21:59.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "Vendinha\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Controllers\\ClientesController.cs*",
-              "RelativeToolTip": "Vendinha\\Controllers\\ClientesController.cs*",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwDYAAAAJAAAAAAAAAA==",
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "Vendinha.Core\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\ClienteService.cs",
+              "RelativeToolTip": "Vendinha.Core\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T21:21:59.152Z",
+              "WhenOpened": "2026-05-24T19:11:46.157Z",
               "EditorCaption": ""
             },
             {
@@ -157,22 +118,35 @@
               "RelativeDocumentMoniker": "Vendinha\\Controllers\\DividasController.cs",
               "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Controllers\\DividasController.cs",
               "RelativeToolTip": "Vendinha\\Controllers\\DividasController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwEgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-24T21:22:20.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VendinhaDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Data\\VendinhaDbContext.cs",
-              "RelativeDocumentMoniker": "Vendinha.Core\\Data\\VendinhaDbContext.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Data\\VendinhaDbContext.cs",
-              "RelativeToolTip": "Vendinha.Core\\Data\\VendinhaDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA3wCkAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Vendinha.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Vendinha.Core.csproj",
+              "RelativeDocumentMoniker": "Vendinha.Core\\Vendinha.Core.csproj",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Vendinha.Core.csproj",
+              "RelativeToolTip": "Vendinha.Core\\Vendinha.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-27T14:20:34.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DividaService.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\DividaService.cs",
+              "RelativeDocumentMoniker": "Vendinha.Core\\Services\\DividaService.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Services\\DividaService.cs",
+              "RelativeToolTip": "Vendinha.Core\\Services\\DividaService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T19:53:12.82Z",
+              "WhenOpened": "2026-05-24T19:12:15.494Z",
               "EditorCaption": ""
             },
             {
@@ -183,14 +157,53 @@
               "RelativeDocumentMoniker": "Vendinha\\Program.cs",
               "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Program.cs",
               "RelativeToolTip": "Vendinha\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-22T23:34:52.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Divida.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Divida.cs",
+              "RelativeDocumentMoniker": "Vendinha.Core\\Models\\Divida.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Divida.cs",
+              "RelativeToolTip": "Vendinha.Core\\Models\\Divida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T20:11:13.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Vendinha.Core\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Models\\Cliente.cs",
+              "RelativeToolTip": "Vendinha.Core\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T20:16:35.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Vendinha.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Vendinha.Api.csproj",
+              "RelativeDocumentMoniker": "Vendinha\\Vendinha.Api.csproj",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Vendinha.Api.csproj",
+              "RelativeToolTip": "Vendinha\\Vendinha.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-27T04:12:49.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\appsettings.json",
               "RelativeDocumentMoniker": "Vendinha\\appsettings.json",
@@ -198,12 +211,11 @@
               "RelativeToolTip": "Vendinha\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-22T23:40:43.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-22T23:40:43.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Vendinha\\Properties\\launchSettings.json",
@@ -211,12 +223,11 @@
               "RelativeToolTip": "Vendinha\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-27T04:56:04.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T04:56:04.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Vendinha.Api",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Vendinha.Api.csproj",
               "RelativeDocumentMoniker": "Vendinha\\Vendinha.Api.csproj",
@@ -228,31 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Vendinha.Core.csproj",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Vendinha.Core.csproj",
-              "RelativeDocumentMoniker": "Vendinha.Core\\Vendinha.Core.csproj",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha.Core\\Vendinha.Core.csproj",
-              "RelativeToolTip": "Vendinha.Core\\Vendinha.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-27T14:20:34.342Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Vendinha.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Vendinha.Api.csproj",
-              "RelativeDocumentMoniker": "Vendinha\\Vendinha.Api.csproj",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Vendinha.Api.csproj",
-              "RelativeToolTip": "Vendinha\\Vendinha.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-27T04:12:49.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "database_schema.sql",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\obj\\Debug\\net8.0\\database_schema.sql",
               "RelativeDocumentMoniker": "Vendinha\\obj\\Debug\\net8.0\\database_schema.sql",
@@ -263,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "20260524001229_AjusteData.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Vendinha\\Vendinha\\Migrations\\20260524001229_AjusteData.cs",
               "RelativeDocumentMoniker": "Vendinha\\Migrations\\20260524001229_AjusteData.cs",

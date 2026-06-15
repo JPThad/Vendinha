@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Vendinha.Core.Models;
 using Vendinha.Core.Services;
 using Vendinha.Core.Data;
@@ -10,28 +9,23 @@ namespace Vendinha.Controllers
     [Route("api/[controller]")]
     public class ClientesController : ControllerBase
     {
-        private readonly VendinhaDbContext _context;
         private readonly ClienteService _clienteService;
 
-        public ClientesController(VendinhaDbContext context, ClienteService clienteService)
+        public ClientesController(ClienteService clienteService)
         {
-            _context = context;
             _clienteService = clienteService;
         }
-
         [HttpGet]
-        public async Task<IActionResult> Listar(string? nome, int pagina = 1)
+        public IActionResult Listar(string? nome, int pagina = 1)
         {
-            var clientes = await _clienteService.ListarClientesOrdenadosPorDivida(nome, pagina);
+            var clientes = _clienteService.ListarClientesOrdenadosPorDivida(nome, pagina);
             return Ok(clientes);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> BuscarPorId(int id)
+        public IActionResult BuscarPorId(int id)
         {
-            var cliente = await _context.Clientes
-                .Include(c => c.Dividas)
-                .FirstOrDefaultAsync(c => c.Id == id);
+            var cliente = _clienteService.BuscarPorId(id);
 
             if (cliente == null)
             {
@@ -45,7 +39,7 @@ namespace Vendinha.Controllers
                 cliente.CPF,
                 cliente.DataNascimento,
 
-                Idade = DateTime.Today.Year - cliente.DataNascimento.Year,
+                Idade = ClienteService.CalcularIdade(cliente.DataNascimento),
 
                 cliente.Email,
 
@@ -64,46 +58,67 @@ namespace Vendinha.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar([FromBody] Cliente cliente)
+        public IActionResult Criar([FromBody] Cliente cliente)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var sucesso = await _clienteService.CadastrarCliente(cliente);
+            var sucesso = _clienteService.CadastrarCliente(
+                cliente,
+                out var erros
+            );
 
             if (!sucesso)
             {
-                return BadRequest(new
-                {
-                    message = "CPF inválido ou já cadastrado."
-                });
+                return BadRequest(erros);
             }
 
             return Ok(cliente);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Atualizar(int id, [FromBody] Cliente cliente)
+        public IActionResult Atualizar(int id, [FromBody] Cliente cliente)
         {
-            if (id != cliente.Id) return BadRequest(new { message = "ID do cliente divergente." });
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (id != cliente.Id)
+            {
+                return BadRequest(new
+                {
+                    message = "ID do cliente divergente."
+                });
+            }
 
-            _context.Entry(cliente).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var sucesso = _clienteService.Atualizar(cliente);
+
+            if (!sucesso)
+            {
+                return NotFound(new
+                {
+                    message = "Cliente não encontrado."
+                });
+            }
+
             return Ok(cliente);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Remover(int id)
+        public IActionResult Remover(int id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
-            if (cliente == null) return NotFound(new { message = "Cliente não encontrado para remoção." });
+            var sucesso = _clienteService.Remover(id);
 
-            _context.Clientes.Remove(cliente);
-            await _context.SaveChangesAsync();
-            return Ok(new { message = "Cliente removido com sucesso." });
+            if (!sucesso)
+            {
+                return NotFound(new
+                {
+                    message = "Cliente não encontrado para remoção."
+                });
+            }
+
+            return Ok(new
+            {
+                message = "Cliente removido com sucesso."
+            });
         }
     }
 }

@@ -235,3 +235,5 @@ C:\Users\joaop\source\repos\Vendinha\Vendinha\obj\Debug\net8.0\refint\Vendinha.A
 C:\Users\joaop\source\repos\Vendinha\Vendinha\obj\Debug\net8.0\Vendinha.Api.pdb
 C:\Users\joaop\source\repos\Vendinha\Vendinha\obj\Debug\net8.0\Vendinha.Api.genruntimeconfig.cache
 C:\Users\joaop\source\repos\Vendinha\Vendinha\obj\Debug\net8.0\ref\Vendinha.Api.dll
+C:\Users\joaop\source\repos\Vendinha\Vendinha\obj\Debug\net8.0\Vendinha.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\joaop\source\repos\Vendinha\Vendinha\obj\Debug\net8.0\Vendinha.Api.sourcelink.json

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Vendinha.Core.Models;
-using Vendinha.Core.Data;
+using Vendinha.Core.Services;
 
 namespace Vendinha.Controllers
 {
@@ -9,65 +8,117 @@ namespace Vendinha.Controllers
     [Route("api/[controller]")]
     public class DividasController : ControllerBase
     {
-        private readonly VendinhaDbContext _context;
+        private readonly DividaService _dividaService;
 
-        public DividasController(VendinhaDbContext context)
+        public DividasController(DividaService dividaService)
         {
-            _context = context;
+            _dividaService = dividaService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Listar()
+        public IActionResult Listar()
         {
-            var dividas = await _context.Dividas.Include(d => d.Cliente).ToListAsync();
+            var dividas = _dividaService.Listar();
             return Ok(dividas);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> BuscarPorId(int id)
+        public IActionResult BuscarPorId(int id)
         {
-            var divida = await _context.Dividas
-                .Include(d => d.Cliente)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var divida = _dividaService.BuscarPorId(id);
 
-            if (divida == null) return NotFound(new { message = "Dívida não encontrada." });
+            if (divida == null)
+            {
+                return NotFound(new
+                {
+                    message = "Dívida não encontrada."
+                });
+            }
 
             return Ok(divida);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar([FromBody] Divida divida)
+        public IActionResult Criar([FromBody] Divida divida)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var sucesso = _dividaService.CriarDivida(
+                divida,
+                out var erros
+            );
 
-            _context.Dividas.Add(divida);
-            await _context.SaveChangesAsync();
+            if (!sucesso)
+            {
+                return BadRequest(erros);
+            }
 
             return CreatedAtAction(nameof(BuscarPorId), new { id = divida.Id }, divida);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Atualizar(int id, [FromBody] Divida divida)
+        public IActionResult Atualizar(int id, [FromBody] Divida divida)
         {
-            if (id != divida.Id) return BadRequest(new { message = "ID da dívida divergente." });
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (id != divida.Id)
+            {
+                return BadRequest(new
+                {
+                    message = "ID da dívida divergente."
+                });
+            }
 
-            _context.Entry(divida).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var sucesso = _dividaService.Atualizar(divida);
+
+            if (!sucesso)
+            {
+                return NotFound(new
+                {
+                    message = "Dívida não encontrada."
+                });
+            }
 
             return Ok(divida);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Remover(int id)
+        public IActionResult Remover(int id)
         {
-            var divida = await _context.Dividas.FindAsync(id);
-            if (divida == null) return NotFound(new { message = "Dívida não encontrada para remoção." });
+            var sucesso = _dividaService.Remover(id);
 
-            _context.Dividas.Remove(divida);
-            await _context.SaveChangesAsync();
+            if (!sucesso)
+            {
+                return NotFound(new
+                {
+                    message = "Dívida não encontrada para remoção."
+                });
+            }
 
-            return Ok(new { message = "Dívida removida com sucesso." });
+            return Ok(new
+            {
+                message = "Dívida removida com sucesso."
+            });
+        }
+
+        [HttpPut("{id}/pagar")]
+        public IActionResult Pagar(int id)
+        {
+            var sucesso = _dividaService.PagarDivida(id);
+
+            if (!sucesso)
+            {
+                return BadRequest(new
+                {
+                    message = "A dívida não existe ou já está paga."
+                });
+            }
+
+            return Ok(new
+            {
+                message = "Dívida paga com sucesso pelo cliente."
+            });
         }
     }
 }
